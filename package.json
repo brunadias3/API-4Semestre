@@ -12,6 +12,6 @@
     "server": "cd.. && cd Backend && npm run dev",
     "instalar": "cd Front && npm install && cd Backend && npm install",
     "dev": "concurrently --kill-others-on-fail \"npm start\" \"npm run server\"",
-    "cpt": "cd Front && npm run dev" 
+    "cpt": "cd Front && npm run dev && cd Backend && npm run dev" 
   }
 }
