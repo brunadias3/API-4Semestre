@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "Front/package.json", "use": "@vercel/static-build" },
+    { "src": "Backend/package.json", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "Backend/$1" },
+    { "src": "/(.*)", "dest": "Front/$1" }
+  ],
+  "env": {
+    "BUILD_COMMAND": "npm run build",
+    "FRONTEND_BUILD_DIR": "Front/build"
+  },
+  "dev": {
+    "command": "concurrently \"cd Front && npm start\" \"cd Backend && npm start\"",
+    "port": 3000
+  }
+}
