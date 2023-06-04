@@ -13,9 +13,5 @@
       "BUILD_COMMAND": "npm run build",
       "FRONTEND_BUILD_DIR": "Front/build"
     }
-  },
-  "dev": {
-    "command": "concurrently \"npm run frontend\" \"npm run backend\"",
-    "port": 3000
   }
 }
