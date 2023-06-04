@@ -8,12 +8,6 @@
     { "src": "/api/(.*)", "dest": "Backend/$1" },
     { "src": "/(.*)", "dest": "Front/$1" }
   ],
-  "installConfig": {
-    "include": {
-      "frontend": "Front/package.json",
-      "backend": "Backend/package.json"
-    }
-  },
   "build": {
     "env": {
       "BUILD_COMMAND": "npm run build",
