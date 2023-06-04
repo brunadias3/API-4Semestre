@@ -8,6 +8,6 @@
   "start": "concurrently \"npm run frontend\" \"npm run backend\"",
   "frontend": "cd Front && npm start",
   "backend": "cd Backend && npm start",
-  "install-all": "cd Front && npm install && cd ../Backend && npm install"
+  "install-all": "cd Front && npm install && cd Backend && npm install"
 }
 }
