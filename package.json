@@ -5,13 +5,9 @@
     "react-select": "^5.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "cd.. && cd Backend && npm run dev",
-    "instalar": "cd Front && npm install && cd Backend && npm install",
-    "dev": "concurrently --kill-others-on-fail \"npm start\" \"npm run server\"",
-    "cpt": "cd Front && npm run dev && cd Backend && npm run dev" 
-  }
+  "start": "concurrently \"npm run frontend\" \"npm run backend\"",
+  "frontend": "cd Front && npm start",
+  "backend": "cd Backend && npm start",
+  "install-all": "cd Front && npm install && cd ../Backend && npm install"
+}
 }
