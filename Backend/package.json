@@ -8,7 +8,8 @@
     "dev": "ts-node-dev ./src",
     "migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migrations/default",
     "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
-    "migration:revert": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:revert"
+    "migration:revert": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:revert",
+    "vercel-build": "npx prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
